@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(4, 3, 54, 0.568);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.page-content .container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 310px;
+  height: 550px;
+  padding: 10px;
+  box-shadow: 3px 5px 10px #000;
+  background-color: rgba(2, 2, 29, 0.342);
+}
+
+.page-content .container .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-content .container .head h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.page-content .container .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+}
+
+.page-content .container .list .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  margin: 5px;
+}
+
+.page-content .container .list .item input {
+  width: 200px;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(153, 153, 153);
+  color: #fff;
+  border-radius: 50px 0 0 50px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.page-content .container .list .item i {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  background: rgba(13, 231, 5, 0.445);
+  border: 1px solid rgb(153, 153, 153);
+  color: #fff;
+  border-radius: 0 50px 50px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page-content .container .list .item i:hover {
+  background: rgba(7, 131, 3, 0.808);
+}
+
+.page-content .container .list .item i span {
+  font-size: 14px;
+}
+
+.page-content .container .list #item-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 440px;
+}
+
+.page-content .container .list #item-list .task-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  width: 300px;
+  max-height: 380px;
+  padding: 15px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page-content .container .list #item-list .task-items .task {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  background: rgba(14, 3, 109, 0.356);
+  transition: all 0.3s ease-in-out;
+}
+
+.page-content .container .list #item-list .task-items .task:nth-child(odd) {
+  background: rgba(18, 67, 87, 0.527);
+}
+
+.page-content .container .list #item-list .task-items .task input[type="text"] {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 20px;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+
+.page-content .container .list #item-list .task-items .task input[type="text"]:focus {
+  outline: none;
+  background: rgba(29, 87, 18, 0.527);
+}
+
+.page-content .container .list #item-list .task-items .task input[type="checkbox"] {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  align-self: flex-start;
+}
+
+.page-content .container .list #item-list .task-items .task input[type="checkbox"]:checked + input[type="text"] {
+  text-decoration: line-through rgba(39, 114, 4, 0.664) 3px;
+}
+
+.page-content .container .list #item-list .task-items .task .fa-trash {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(236, 106, 106);
+  margin: 0 20px;
+  transition: all 0.2s ease-in;
+}
+
+.page-content .container .list #item-list .task-items .task .fa-trash:hover {
+  color: rgb(231, 20, 20);
+}
+
+.hidden {
+  display: none;
+}
+
+.page-content .container .list #item-list .clear-completed {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  padding: 20px;
+}
+
+.page-content .container .list #item-list .clear-completed button {
+  background-color: rgba(187, 38, 38, 0.822);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.page-content .container .list #item-list .clear-completed button:hover {
+  background-color: rgba(136, 13, 13, 0.822);
+}
+
+@media only screen and (min-width: 768px) {
+  .page-content .container {
+    width: 450px;
+  }
+
+  .page-content .container .list #item-list .task-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 400px;
+    max-height: 380px;
+    padding: 10px;
+  }
+
+  .page-content .container .list #item-list .task-items .task input[type="text"] {
+    width: auto;
+  }
+}
