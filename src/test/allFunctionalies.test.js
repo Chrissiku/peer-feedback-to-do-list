@@ -60,7 +60,6 @@ describe('add and remove', () => {
   });
 });
 
-
 describe('Edit test', () => {
   test('Editing', () => {
     const todoList = new PrintTasks();
