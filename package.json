@@ -12,7 +12,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "webpack",
     "start": "webpack serve --open"
   },
