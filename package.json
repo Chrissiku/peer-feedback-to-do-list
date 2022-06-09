@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "build": "webpack",
     "start": "webpack serve --open"
   },
@@ -28,6 +28,7 @@
     "eslint-plugin-import": "^2.26.0",
     "hint": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -38,6 +39,7 @@
     "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
+    "jest-environment-jsdom": "^28.1.1",
     "lodash": "^4.17.21"
   }
 }
