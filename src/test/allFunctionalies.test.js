@@ -47,15 +47,32 @@ describe('add and remove', () => {
 
   test('remove task', () => {
     const todoList = new PrintTasks();
-    const newTodo1 = {
+    const newTodoList1 = {
       id: '2',
       description: 'task2',
       completed: false,
       index: 2,
     };
-    todoList.add(newTodo1);
-    todoList.remove(newTodo1.id);
+    todoList.add(newTodoList1);
+    todoList.remove(newTodoList1.id);
     expect(todoList.tasksCollection[0].description).toBe('task1');
     expect(todoList.tasksCollection).toHaveLength(1);
+  });
+});
+
+
+describe('Edit test', () => {
+  test('Editing', () => {
+    const todoList = new PrintTasks();
+    const newTodoList2 = {
+      id: '2',
+      description: 'task33',
+      completed: false,
+      index: 2,
+    };
+    todoList.add(newTodoList2);
+    todoList.update(newTodoList2.id, 'asd');
+    expect(todoList.tasksCollection[1].description).toBe('asd');
+    expect(todoList.tasksCollection).toHaveLength(2);
   });
 });
