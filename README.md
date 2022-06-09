@@ -1,56 +1,85 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name : TO-Do list (Peer-Feedback and testing)
 
-> Description the project.
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. 
+> I build a simple website that allows for doing that, and I do it using ES6 and Webpack!
+>
+>
+> In order to achieve this project I used some resources and technologies listed below :
+> Note that this project is repetition is for learning purpose
 
+<!-- ## Here is the screen shoot of the project -->
+
+<!-- ![screen](https://user-images.githubusercontent.com/101924220/169167327-1be8919e-2bda-4006-8efe-1d12850dc485.PNG) -->
+
+| On Desktop                                                                                                                                                                 | On Mobile                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="800" alt="Desktop version of the project" src="https://user-images.githubusercontent.com/101924220/171742769-a23ed30e-fc53-4331-a4ae-a7679ed315e7.PNG"> | <img width="320" alt="Mobile Version" src="https://user-images.githubusercontent.com/101924220/171742777-c34efe51-240b-41b9-8f1b-cbcf58cb339c.PNG"> |
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : JavaScript (ES6 syntax), HTLM and CSS
+- Frameworks : none
+- Module bundler : `webpack`
+- Technologies used : Github, Git and Linters
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+> Click here for the [demo](https://chrissiku.github.io/To-Do-List/dist)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites ♻️
 
-### Setup
+- A personal computer connected to the internet;
+- Have a working and updated browser.
+- Have a local version control like git installed on your computer
+- Have an account on Github, as an online/remote Version Control System
+- Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
+- At least basic of HTML and CSS.
+
+### Setup 🎰
+
+- Click the [me](https://github.com/Chrissiku/peer-feedback-to-do-list) and you'll land on the pure repository;
+- click on the green (🟢) button with `Code` Inscription;
+- You can choose to download the project or just clone it if you are familiar with Git and Github;
+- Follow normal step once download in your computer and use it as it's yours.
 
 ### Install
 
-### Usage
+- If you are familiar with git, Run `npm install` to get all dependecies required to run the linters checks, otherwise use the downloaded project on your computer without testing files
 
-### Run tests
+### Run test 🧪
 
-### Deployment
+> Run thes command bellow inside your `git bash` or command line interface..
 
+- `npm build start` : to run the project in your default web Browser
+- `npx hint .` : for the `html` codebase and use of best practices.
+- `npx stylelint "**/*.{css,scss}"` : for the `css` codebase and use of best practices. you can add
+- `npx eslint .` : for the `JavaScript` codebase and use of best practices
+- `npm run test` or `npm test` : to run the test for the application
+- > Note that you can add `--fix` keyword to the command for `Css` and/or `JavaScript` to make sure that you avoid all errors comming from your `code editor`
 
+## Author
 
-## Authors
+👤 **Chris Siku (Main Author)**
 
-👤 **Author1**
+- GitHub: [@githubhandle](https://github.com/Chrissiku)
+- Twitter: [@twitterhandle](https://twitter.com/christian_siku)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chris-siku-4bb53b232/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+![Chris Siku's GitHub stats](https://github-readme-stats.vercel.app/api?username=Chrissiku&count_private=true&theme=dark&show_icons=true)
 
-👤 **Author2**
+👤 **Chris Siku (Collaborator)**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- Twitter: [@twitterhandle](https://twitter.com/NatiDemelash)
+
+![Natnael Demelash's GitHub stats](https://github-readme-stats.vercel.app/api?username=NatiDeme&count_private=true&theme=dark&show_icons=true)
+
 
 ## 🤝 Contributing
 
@@ -64,9 +93,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Hat tip to anyone whose code was used.
 
 ## 📝 License
 

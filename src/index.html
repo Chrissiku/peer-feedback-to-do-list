@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script
+      src="https://kit.fontawesome.com/985640b3e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <main class="container">
+        <!-- Header -->
+        <div class="head">
+          <h1>My Todo List</h1>
+          <i id="refersh" class="fa-solid fa-rotate icon"></i>
+        </div>
+        <!-- List Items -->
+        <div class="list">
+          <!-- Insert task -->
+          <div class="item">
+            <input
+              id="new-item"
+              type="text"
+              name="to-do-task"
+              placeholder="Add a new task ..."
+            />
+            <i id="enter" class="fa-solid fa-circle-plus arrows enter-icon"
+              ><span>Add</span></i
+            >
+          </div>
+          <div id="item-list">
+            <div class="task-items"></div>
+            <div class="clear-completed">
+              <button id="clear" type="button">Clear All Completed</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
