@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name : TO-Do list (Peer-Feedback)
+# Project Name : TO-Do list (Peer-Feedback and testing)
 
 > "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. 
 > I build a simple website that allows for doing that, and I do it using ES6 and Webpack!
@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup 🎰
 
-- Click the [me](https://github.com/Chrissiku/To-Do-List) and you'll land on the pure repository;
+- Click the [me](https://github.com/Chrissiku/peer-feedback-to-do-list) and you'll land on the pure repository;
 - click on the green (🟢) button with `Code` Inscription;
 - You can choose to download the project or just clone it if you are familiar with Git and Github;
 - Follow normal step once download in your computer and use it as it's yours.
@@ -60,6 +60,7 @@ To get a local copy up and running follow these simple example steps.
 - `npx hint .` : for the `html` codebase and use of best practices.
 - `npx stylelint "**/*.{css,scss}"` : for the `css` codebase and use of best practices. you can add
 - `npx eslint .` : for the `JavaScript` codebase and use of best practices
+- `npm run test` or `npm test` : to run the test for the application
 - > Note that you can add `--fix` keyword to the command for `Css` and/or `JavaScript` to make sure that you avoid all errors comming from your `code editor`
 
 ## Author
@@ -71,6 +72,13 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chris-siku-4bb53b232/)
 
 ![Chris Siku's GitHub stats](https://github-readme-stats.vercel.app/api?username=Chrissiku&count_private=true&theme=dark&show_icons=true)
+
+👤 **Chris Siku (Collaborator)**
+
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- Twitter: [@twitterhandle](https://twitter.com/NatiDemelash)
+
+![Natnael Demelash's GitHub stats](https://github-readme-stats.vercel.app/api?username=NatiDeme&count_private=true&theme=dark&show_icons=true)
 
 
 ## 🤝 Contributing
