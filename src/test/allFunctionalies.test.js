@@ -75,3 +75,28 @@ describe('Edit test', () => {
     expect(todoList.tasksCollection).toHaveLength(2);
   });
 });
+
+describe('complete test', () => {
+  test(' updating an item completed status', () => {
+    const todoList = new PrintTasks();
+    const newTodoList3 = {
+      id: '3',
+      descrition: 'task5',
+      completed: false,
+      index: 3,
+    };
+    todoList.add(newTodoList3);
+    todoList.changeStatus(newTodoList3.id, true);
+    expect(todoList.tasksCollection[2].completed).toBeTruthy();
+    expect(todoList.tasksCollection).toHaveLength(3);
+  });
+});
+
+describe('Clear all completed', () => {
+  test('Clear completed items', () => {
+    const todoList = new PrintTasks();
+    todoList.removeCompletedTasks();
+    expect(todoList.tasksCollection).toHaveLength(2);
+    expect(todoList.tasksCollection[1].completed).toBeFalsy();
+  });
+});
