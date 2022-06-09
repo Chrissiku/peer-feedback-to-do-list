@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
-export default class PrintTasks {
+class PrintTasks {
   constructor() {
-    this.tasksCollection = JSON.parse(localStorage.getItem("tasks")) || [];
+    this.tasksCollection = JSON.parse(localStorage.getItem('tasks')) || [];
   }
 
   add(task) {
     this.tasksCollection.push(task);
-    localStorage.setItem("tasks", JSON.stringify(this.tasksCollection));
+    localStorage.setItem('tasks', JSON.stringify(this.tasksCollection));
   }
 
   remove(id) {
@@ -14,7 +14,7 @@ export default class PrintTasks {
     this.tasksCollection.forEach((task, index) => {
       task.index = index + 1;
     });
-    localStorage.setItem("tasks", JSON.stringify(this.tasksCollection));
+    localStorage.setItem('tasks', JSON.stringify(this.tasksCollection));
   }
 
   update(id, description) {
@@ -23,7 +23,7 @@ export default class PrintTasks {
         this.tasksCollection[collectionIndex].description = description;
       }
     });
-    localStorage.setItem("tasks", JSON.stringify(this.tasksCollection));
+    localStorage.setItem('tasks', JSON.stringify(this.tasksCollection));
   }
 
   changeStatus(id, status) {
@@ -32,7 +32,7 @@ export default class PrintTasks {
         this.tasksCollection[collectionIndex].completed = status;
       }
     });
-    localStorage.setItem("tasks", JSON.stringify(this.tasksCollection));
+    localStorage.setItem('tasks', JSON.stringify(this.tasksCollection));
   }
 
   funcSize() {
@@ -41,11 +41,14 @@ export default class PrintTasks {
 
   removeCompletedTasks() {
     this.tasksCollection = this.tasksCollection.filter(
-      (task) => !task.completed
+      (task) => !task.completed,
     );
     this.tasksCollection.forEach((task, index) => {
       task.index = index + 1;
     });
-    localStorage.setItem("tasks", JSON.stringify(this.tasksCollection));
+    localStorage.setItem('tasks', JSON.stringify(this.tasksCollection));
   }
 }
+
+// export default PrintTasks;
+module.exports = PrintTasks;

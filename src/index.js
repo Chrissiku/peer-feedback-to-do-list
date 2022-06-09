@@ -8,7 +8,6 @@ import "./style.css";
 import displayTask from "./modules/display.js";
 import edit from "./modules/edit.js";
 // import TaskList from "./modules/task.js";
-import myObject from "./modules/task.js";
 
 import {
   enter,

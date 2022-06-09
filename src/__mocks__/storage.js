@@ -22,4 +22,5 @@ class LocalStorageMock {
 }
 
 const newList = new LocalStorageMock();
-export default { newList };
+// export default newList;
+module.exports = newList;
